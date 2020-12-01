@@ -1,0 +1,25 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "client": "cd../ && cd h && yarn start",
+    "server": "node index.js",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
+  },
+  "dependencies": {
+    "axios": "^0.21.0",
+    "body-parse": "^1.18.3",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "react-router-dom": "^5.2.0",
+    "yaren": "^1.22.0"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0"
+  },
+  "author": "",
+  "license": "ISC"
+}

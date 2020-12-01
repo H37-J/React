@@ -1,0 +1,10 @@
+package com.example.demo.confing;
+
+import javax.servlet.Filter;
+import javax.servlet.*;
+
+
+@Configuration
+public class CORSFilter {
+
+}

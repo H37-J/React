@@ -1,0 +1,6 @@
+package com.example.demo.confing;
+
+import java.io.*;
+public class CORSFilter {
+
+}

@@ -1,0 +1,20 @@
+package com.example.demo.confing;
+
+import javax.servlet.Filter;
+import javax.servlet.*;
+import javax.servlet.http.*;
+
+import org.springframework.context.annotation.*;
+
+@Configuration
+public class CORSFilter implements Filter{
+
+    @Override
+    public void doFilter(ServletRequest req,ServletResponse res, FilterChain chain) throws ServletException{
+        HttpServletResponse response=(HttpServletResponse) res;
+        response.setHeader("Access-Control-Allo-Origin","*");
+        chain.doFilter(req,res);
+         
+    }
+
+}
