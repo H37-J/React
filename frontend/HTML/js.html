@@ -59,8 +59,7 @@
     promiseAjax('GET', `${url}/1`)
       // 포스트 id가 1인 포스트를 작성한 사용자의 아이디로 작성된 모든 포스트를 검색하고 프로미스를 반환한다.
       .then(res => promiseAjax('GET', `${url}?userId=${JSON.parse(res).userId}`))
-      .then(JSON.parse)
-      .then(render)
+      .then(JSON.parse)      .then(render)
       .catch(console.error);
   </script>
 </body>
